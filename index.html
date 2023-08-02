@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><span>N</span>etflix</h1>
+      </header>
+      <main>
+        <h3>
+          Thank you for signin up at Netflix. Tell us more about yourself.
+        </h3>
+        <!-- form -->
+        <form action="q" id="sign-up" method="get">
+          <div class="row">
+            <label for="name" class="personal">Name</label><br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="John"
+              required
+            />
+          </div>
+          <div class="row">
+            <label for="lastname" class="personal">Last Name</label><br />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Doe"
+              required
+            />
+          </div>
+          <div class="row">
+            <label for="age" class="personal">Age</label><br />
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="e.g 24"
+              required
+            />
+          </div>
+          <div class="row">
+            <label for="email" class="personal">Email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="johndoe@gmail.com"
+              required
+            />
+          </div>
+          <div class="row">
+            <label for="content" class="personal">Content Type</label><br />
+            <select name="content" id="content">
+              <option value="movies">Movies</option>
+              <option value="series">Series</option>
+            </select>
+          </div>
+          <h4>Movie Type</h4>
+          <div class="flex-container">
+            <div class="row">
+              <input type="checkbox" name="fiction" class="checkbox" />
+              <label for="fiction">Fiction</label>
+            </div>
+            <div class="row">
+              <input type="checkbox" name="horror" class="checkbox" />
+              <label for="horror">Horror</label>
+            </div>
+            <div class="row">
+              <input type="checkbox" name="action" class="checkbox" />
+              <label for="action">Action</label>
+            </div>
+          </div>
+          <br />
+          <h4>Gender</h4>
+          <div class="flex-container">
+            <div class="row">
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Male</label>
+            </div>
+            <div class="row">
+              <input type="radio" name="gender" id="female" />
+              <label for="male">Female</label>
+            </div>
+            <div class="row">
+              <input type="radio" name="gender" id="other" />
+              <label for="male">Other</label>
+            </div>
+          </div>
+          <div class="row">
+            <h4>Feedback</h4>
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="50"
+              rows="10"
+              placeholder="Your feedback will help us improve..."
+            ></textarea>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
