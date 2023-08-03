@@ -111,13 +111,13 @@ button {
     border: none;
     border-radius: 1rem;
     font-family: 'Bebas Neue', sans-serif;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 button:hover {
     background-color: #fff;
     color: #f00000;
-    transition: 1s linear;
+    transition: 0.5s linear;
 }
 
 button:active {
