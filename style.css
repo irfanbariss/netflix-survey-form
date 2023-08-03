@@ -120,3 +120,8 @@ button:hover {
     transition: 1s linear;
 }
 
+button:active {
+    background-color: #fcfcfcb3;
+    transition: 1ms;
+}
+
